@@ -147,7 +147,7 @@ The core real-time endpoint. Flow:
 
 The file should be runnable with:
 ```bash
-uvicorn backend.main:app --host 0.0.0.0 --port 8000
+uvicorn backend.main:app --host 0.0.0.0 --port 3690
 ```
 
 Include an `if __name__ == "__main__"` block:
