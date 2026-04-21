@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Reading Predictor</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>Live Reading Predictor</h1>
+  </header>
+
+  <main>
+    <section id="book-info">
+      <span id="book-title">Waiting for input...</span>
+      <span id="book-author"></span>
+    </section>
+
+    <section id="current-reading">
+      <h2>Currently Reading</h2>
+      <p id="current-text"></p>
+    </section>
+
+    <section id="upcoming">
+      <h2>Coming Next</h2>
+      <div id="upcoming-lines"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span id="status">● Connecting...</span>
+    <span id="confidence"></span>
+  </footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>

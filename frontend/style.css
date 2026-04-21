@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #0d1117;
+  color: #e6edf3;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 2rem 1rem;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #58a6ff;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+main {
+  flex: 1;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+/* Book info */
+
+#book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #21262d;
+}
+
+#book-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #58a6ff;
+}
+
+#book-author {
+  font-size: 1rem;
+  color: #8b949e;
+}
+
+/* Current reading */
+
+#current-reading {
+  margin-bottom: 2rem;
+}
+
+#current-reading h2 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8b949e;
+  margin-bottom: 0.75rem;
+}
+
+#current-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #e6edf3;
+  background: #1f6feb;
+  padding: 1.25rem 1.5rem;
+  border-radius: 8px;
+  min-height: 3.5rem;
+  transition: opacity 0.3s ease;
+}
+
+#current-text:empty {
+  background: transparent;
+}
+
+/* Upcoming lines */
+
+#upcoming {
+  margin-bottom: 2rem;
+}
+
+#upcoming h2 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8b949e;
+  margin-bottom: 0.75rem;
+}
+
+#upcoming-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.upcoming-line {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #c9d1d9;
+  padding: 0.5rem 0;
+  transition: opacity 0.3s ease;
+}
+
+.upcoming-line:first-child {
+  color: #e6edf3;
+}
+
+.upcoming-line:first-child::before {
+  content: "► ";
+  color: #58a6ff;
+}
+
+/* Footer / status bar */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background: #161b22;
+  border-top: 1px solid #21262d;
+}
+
+#status {
+  color: #8b949e;
+}
+
+#status.listening {
+  color: #3fb950;
+}
+
+#status.disconnected {
+  color: #f85149;
+}
+
+#status.error {
+  color: #f85149;
+}
+
+#status.searching {
+  color: #d29922;
+}
+
+#confidence {
+  color: #8b949e;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Fade transition helper */
+
+.fade-out {
+  opacity: 0;
+}
